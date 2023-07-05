@@ -1,0 +1,34 @@
+[package]
+name = "oj"
+version = "0.1.0"
+edition = "2021"
+description = "An online judge as the homework for a Rust course."
+authors = ["Yufan You <youyf21@mails.tsinghua.edu.cn>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.1.0"
+anyhow = "1.0.63"
+async-channel = "1.7.1"
+chrono = { version = "0.4.22", features = ["serde"] }
+clap = { version = "3.2.19", features = ["derive"] }
+diesel = { version = "2.0.0", features = ["sqlite", "r2d2", "chrono", "without-deprecated"], default-features = false }
+diesel-derive-enum = { version = "2.0.0-rc.0", features = ["sqlite"] }
+diesel_migrations = { version = "2.0.0", features = ["sqlite"] }
+dotenvy = "0.15.3"
+env_logger = "0.9.0"
+lazy_static = "1.4.0"
+log = "0.4.17"
+num_cpus = "1.13.1"
+r2d2 = "0.8.10"
+readonly = "0.2.2"
+serde = { version = "1.0.144", features = ["derive"] }
+serde_json = "1.0.85"
+tempfile = "3.3.0"
+tokio = { version = "1.20.1", features = ["time", "process", "fs", "macros", "signal"] }
+
+[dev-dependencies]
+assert-json-diff = "2.0.2"
+pretty_assertions = "1.2.1"
+reqwest = { version = "0.11", features = ["json", "blocking"] }

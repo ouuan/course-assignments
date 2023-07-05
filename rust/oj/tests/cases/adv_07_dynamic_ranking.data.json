@@ -1,0 +1,184 @@
+[
+  {
+    "request": {
+      "path": "users",
+      "method": "POST",
+      "content": {
+        "name": "user1"
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 1,
+        "name": "user1"
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "users",
+      "method": "POST",
+      "content": {
+        "name": "user2"
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 2,
+        "name": "user2"
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { std::thread::sleep(std::time::Duration::from_millis(500)); println!(\"Hello World!\"); }",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 0,
+        "submission": {
+          "source_code": "fn main() { std::thread::sleep(std::time::Duration::from_millis(500)); println!(\"Hello World!\"); }",
+          "language": "Rust",
+          "user_id": 0,
+          "problem_id": 0,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { std::thread::sleep(std::time::Duration::from_millis(1000)); println!(\"Hello World!\"); }",
+        "language": "Rust",
+        "user_id": 1,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 1,
+        "submission": {
+          "source_code": "fn main() { std::thread::sleep(std::time::Duration::from_millis(1000)); println!(\"Hello World!\"); }",
+          "language": "Rust",
+          "user_id": 1,
+          "problem_id": 0,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { std::thread::sleep(std::time::Duration::from_millis(100)); println!(\"Hello World!\"); }",
+        "language": "Rust",
+        "user_id": 2,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 2,
+        "submission": {
+          "source_code": "fn main() { std::thread::sleep(std::time::Duration::from_millis(100)); println!(\"Hello World!\"); }",
+          "language": "Rust",
+          "user_id": 2,
+          "problem_id": 0,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "contests/0/ranklist",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": [
+        {
+          "user": {
+            "id": 2,
+            "name": "user2"
+          },
+          "rank": 1
+        },
+        {
+          "user": {
+            "id": 0,
+            "name": "root"
+          },
+          "rank": 2
+        },
+        {
+          "user": {
+            "id": 1,
+            "name": "user1"
+          },
+          "rank": 3
+        }
+      ]
+    }
+  }
+]

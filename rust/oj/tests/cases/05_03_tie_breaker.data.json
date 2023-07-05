@@ -1,0 +1,458 @@
+[
+  {
+    "request": {
+      "path": "users",
+      "method": "POST",
+      "content": {
+        "name": "user1"
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 1,
+        "name": "user1"
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "users",
+      "method": "POST",
+      "content": {
+        "name": "user2"
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 2,
+        "name": "user2"
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b);}",
+        "language": "Rust",
+        "user_id": 2,
+        "contest_id": 0,
+        "problem_id": 1
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 0,
+        "submission": {
+          "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b);}",
+          "language": "Rust",
+          "user_id": 2,
+          "problem_id": 1,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "score": 100.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          },
+          {
+            "id": 2,
+            "result": "Accepted"
+          },
+          {
+            "id": 3,
+            "result": "Accepted"
+          },
+          {
+            "id": 4,
+            "result": "Accepted"
+          },
+          {
+            "id": 5,
+            "result": "Accepted"
+          },
+          {
+            "id": 6,
+            "result": "Accepted"
+          },
+          {
+            "id": 7,
+            "result": "Accepted"
+          },
+          {
+            "id": 8,
+            "result": "Accepted"
+          },
+          {
+            "id": 9,
+            "result": "Accepted"
+          },
+          {
+            "id": 10,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { println!(\"Hello World!\"); }",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 1,
+        "submission": {
+          "source_code": "fn main() { println!(\"Hello World!\"); }",
+          "language": "Rust",
+          "user_id": 0,
+          "problem_id": 0,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "score": 100.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() {let mut data: Vec<u32> = Vec::new();loop {let mut line = String::new();if std::io::stdin().read_line(&mut line).unwrap() == 0 {break;}data.push(line.trim().parse().unwrap());}data.sort_by_key(|&x| x);data.into_iter().for_each(|x| println!(\"{}\", x));}",
+        "language": "Rust",
+        "user_id": 1,
+        "contest_id": 0,
+        "problem_id": 2
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 2,
+        "submission": {
+          "source_code": "fn main() {let mut data: Vec<u32> = Vec::new();loop {let mut line = String::new();if std::io::stdin().read_line(&mut line).unwrap() == 0 {break;}data.push(line.trim().parse().unwrap());}data.sort_by_key(|&x| x);data.into_iter().for_each(|x| println!(\"{}\", x));}",
+          "language": "Rust",
+          "user_id": 1,
+          "problem_id": 2,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "score": 100.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          },
+          {
+            "id": 2,
+            "result": "Accepted"
+          },
+          {
+            "id": 3,
+            "result": "Accepted"
+          },
+          {
+            "id": 4,
+            "result": "Accepted"
+          },
+          {
+            "id": 5,
+            "result": "Accepted"
+          },
+          {
+            "id": 6,
+            "result": "Accepted"
+          },
+          {
+            "id": 7,
+            "result": "Accepted"
+          },
+          {
+            "id": 8,
+            "result": "Accepted"
+          },
+          {
+            "id": 9,
+            "result": "Accepted"
+          },
+          {
+            "id": 10,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { println!(\"Hello World.\"); }",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 3,
+        "submission": {
+          "source_code": "fn main() { println!(\"Hello World.\"); }",
+          "language": "Rust",
+          "user_id": 0,
+          "problem_id": 0,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Wrong Answer",
+        "score": 0.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Wrong Answer"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "contests/0/ranklist?scoring_rule=highest",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": [
+        {
+          "user": {
+            "id": 0,
+            "name": "root"
+          },
+          "rank": 1,
+          "scores": [
+            100.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "user": {
+            "id": 1,
+            "name": "user1"
+          },
+          "rank": 1,
+          "scores": [
+            0.0,
+            0.0,
+            100.0
+          ]
+        },
+        {
+          "user": {
+            "id": 2,
+            "name": "user2"
+          },
+          "rank": 1,
+          "scores": [
+            0.0,
+            100.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "request": {
+      "path": "contests/0/ranklist?scoring_rule=highest&tie_breaker=user_id",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": [
+        {
+          "user": {
+            "id": 0,
+            "name": "root"
+          },
+          "rank": 1,
+          "scores": [
+            100.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "user": {
+            "id": 1,
+            "name": "user1"
+          },
+          "rank": 2,
+          "scores": [
+            0.0,
+            0.0,
+            100.0
+          ]
+        },
+        {
+          "user": {
+            "id": 2,
+            "name": "user2"
+          },
+          "rank": 3,
+          "scores": [
+            0.0,
+            100.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "request": {
+      "path": "contests/0/ranklist?scoring_rule=highest&tie_breaker=submission_count",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": [
+        {
+          "user": {
+            "id": 1,
+            "name": "user1"
+          },
+          "rank": 1,
+          "scores": [
+            0.0,
+            0.0,
+            100.0
+          ]
+        },
+        {
+          "user": {
+            "id": 2,
+            "name": "user2"
+          },
+          "rank": 1,
+          "scores": [
+            0.0,
+            100.0,
+            0.0
+          ]
+        },
+        {
+          "user": {
+            "id": 0,
+            "name": "root"
+          },
+          "rank": 3,
+          "scores": [
+            100.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "request": {
+      "path": "contests/0/ranklist?scoring_rule=highest&tie_breaker=submission_time",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": [
+        {
+          "user": {
+            "id": 2,
+            "name": "user2"
+          },
+          "rank": 1,
+          "scores": [
+            0.0,
+            100.0,
+            0.0
+          ]
+        },
+        {
+          "user": {
+            "id": 0,
+            "name": "root"
+          },
+          "rank": 2,
+          "scores": [
+            100.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "user": {
+            "id": 1,
+            "name": "user1"
+          },
+          "rank": 3,
+          "scores": [
+            0.0,
+            0.0,
+            100.0
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,340 @@
+[
+  {
+    "request": {
+      "path": "users",
+      "method": "POST",
+      "content": {
+        "name": "user1"
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 1,
+        "name": "user1"
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "contests",
+      "method": "POST",
+      "content": {
+        "name": "Contest 1",
+        "from": "2000-01-01T00:00:00.000Z",
+        "to": "2030-01-01T00:00:00.000Z",
+        "problem_ids": [
+          0
+        ],
+        "user_ids": [
+          1
+        ],
+        "submission_limit": 1
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 1,
+        "name": "Contest 1",
+        "from": "2000-01-01T00:00:00.000Z",
+        "to": "2030-01-01T00:00:00.000Z",
+        "problem_ids": [
+          0
+        ],
+        "user_ids": [
+          1
+        ],
+        "submission_limit": 1
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "contests",
+      "method": "POST",
+      "content": {
+        "name": "Contest 2",
+        "from": "2000-01-01T00:00:00.000Z",
+        "to": "2030-01-01T00:00:00.000Z",
+        "problem_ids": [
+          1
+        ],
+        "user_ids": [
+          0
+        ],
+        "submission_limit": 1
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 2,
+        "name": "Contest 2",
+        "from": "2000-01-01T00:00:00.000Z",
+        "to": "2030-01-01T00:00:00.000Z",
+        "problem_ids": [
+          1
+        ],
+        "user_ids": [
+          0
+        ],
+        "submission_limit": 1
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "contests",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": [
+        {
+          "id": 1,
+          "name": "Contest 1",
+          "from": "2000-01-01T00:00:00.000Z",
+          "to": "2030-01-01T00:00:00.000Z",
+          "problem_ids": [
+            0
+          ],
+          "user_ids": [
+            1
+          ],
+          "submission_limit": 1
+        },
+        {
+          "id": 2,
+          "name": "Contest 2",
+          "from": "2000-01-01T00:00:00.000Z",
+          "to": "2030-01-01T00:00:00.000Z",
+          "problem_ids": [
+            1
+          ],
+          "user_ids": [
+            0
+          ],
+          "submission_limit": 1
+        }
+      ]
+    }
+  },
+  {
+    "request": {
+      "path": "contests/1",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 1,
+        "name": "Contest 1",
+        "from": "2000-01-01T00:00:00.000Z",
+        "to": "2030-01-01T00:00:00.000Z",
+        "problem_ids": [
+          0
+        ],
+        "user_ids": [
+          1
+        ],
+        "submission_limit": 1
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "contests/3",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 404,
+      "content": {
+        "code": 3,
+        "reason": "ERR_NOT_FOUND"
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b);}",
+        "language": "Rust",
+        "contest_id": 2,
+        "problem_id": 1,
+        "user_id": 1
+      }
+    },
+    "response": {
+      "status": 400,
+      "content": {
+        "code": 1,
+        "reason": "ERR_INVALID_ARGUMENT"
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b);}",
+        "language": "Rust",
+        "contest_id": 2,
+        "problem_id": 0,
+        "user_id": 0
+      }
+    },
+    "response": {
+      "status": 400,
+      "content": {
+        "code": 1,
+        "reason": "ERR_INVALID_ARGUMENT"
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b);}",
+        "language": "Rust",
+        "contest_id": 2,
+        "problem_id": 1,
+        "user_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "submission": {
+          "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b);}",
+          "language": "Rust",
+          "contest_id": 2,
+          "problem_id": 1,
+          "user_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "score": 100.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          },
+          {
+            "id": 2,
+            "result": "Accepted"
+          },
+          {
+            "id": 3,
+            "result": "Accepted"
+          },
+          {
+            "id": 4,
+            "result": "Accepted"
+          },
+          {
+            "id": 5,
+            "result": "Accepted"
+          },
+          {
+            "id": 6,
+            "result": "Accepted"
+          },
+          {
+            "id": 7,
+            "result": "Accepted"
+          },
+          {
+            "id": 8,
+            "result": "Accepted"
+          },
+          {
+            "id": 9,
+            "result": "Accepted"
+          },
+          {
+            "id": 10,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b);}",
+        "language": "Rust",
+        "contest_id": 2,
+        "problem_id": 1,
+        "user_id": 0
+      }
+    },
+    "response": {
+      "status": 400,
+      "content": {
+        "code": 4,
+        "reason": "ERR_RATE_LIMIT"
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "contests/1/ranklist",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": [
+        {
+          "user": {
+            "id": 1,
+            "name": "user1"
+          },
+          "rank": 1,
+          "scores": [
+            0.0
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "request": {
+      "path": "contests/2/ranklist",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": [
+        {
+          "user": {
+            "id": 0,
+            "name": "root"
+          },
+          "rank": 1,
+          "scores": [
+            100.0
+          ]
+        }
+      ]
+    }
+  }
+]

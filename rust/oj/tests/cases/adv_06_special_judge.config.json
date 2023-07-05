@@ -1,0 +1,39 @@
+{
+  "server": {
+    "bind_address": "127.0.0.1",
+    "bind_port": 12345
+  },
+  "problems": [
+    {
+      "id": 1,
+      "name": "guessing",
+      "type": "spj",
+      "misc": {
+        "special_judge": ["python3", "./tests/data/guessing/judge.py", "%OUTPUT%", "%ANSWER%"]
+      },
+      "cases": [
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 100,
+          "input_file": "./tests/data/guessing/1.in",
+          "answer_file": "./tests/data/guessing/1.ans"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Rust",
+      "file_name": "main.rs",
+      "command": [
+        "rustc",
+        "-C",
+        "opt-level=2",
+        "%INPUT%",
+        "-o",
+        "%OUTPUT%"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { let data: Vec<i32> = vec![1; 10485760]; println!(\"{:?}\", data); }",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "submission": {
+          "source_code": "fn main() { let data: Vec<i32> = vec![1; 10485760]; println!(\"{:?}\", data); }",
+          "language": "Rust",
+          "user_id": 0,
+          "problem_id": 0,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Memory Limit Exceeded",
+        "score": 0.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Memory Limit Exceeded"
+          }
+        ]
+      }
+    }
+  }
+]

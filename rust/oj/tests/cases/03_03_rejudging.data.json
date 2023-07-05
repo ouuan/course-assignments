@@ -1,0 +1,250 @@
+[
+  {
+    "request": {
+      "path": "jobs/0",
+      "method": "PUT",
+      "content": {}
+    },
+    "response": {
+      "status": 404,
+      "content": {
+        "code": 3,
+        "reason": "ERR_NOT_FOUND"
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b);}",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 1
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 0,
+        "submission": {
+          "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b);}",
+          "language": "Rust",
+          "user_id": 0,
+          "problem_id": 1,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "score": 100.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          },
+          {
+            "id": 2,
+            "result": "Accepted"
+          },
+          {
+            "id": 3,
+            "result": "Accepted"
+          },
+          {
+            "id": 4,
+            "result": "Accepted"
+          },
+          {
+            "id": 5,
+            "result": "Accepted"
+          },
+          {
+            "id": 6,
+            "result": "Accepted"
+          },
+          {
+            "id": 7,
+            "result": "Accepted"
+          },
+          {
+            "id": 8,
+            "result": "Accepted"
+          },
+          {
+            "id": 9,
+            "result": "Accepted"
+          },
+          {
+            "id": 10,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "#include <stdio.h>\nint main() { printf(\"Hello World!\\n\"); return 0; }",
+        "language": "C",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 1,
+        "submission": {
+          "source_code": "#include <stdio.h>\nint main() { printf(\"Hello World!\\n\"); return 0; }",
+          "language": "C",
+          "user_id": 0,
+          "problem_id": 0,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "score": 100.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs/0",
+      "method": "PUT",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 0,
+        "submission": {
+          "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b);}",
+          "language": "Rust",
+          "user_id": 0,
+          "problem_id": 1,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "score": 100.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          },
+          {
+            "id": 2,
+            "result": "Accepted"
+          },
+          {
+            "id": 3,
+            "result": "Accepted"
+          },
+          {
+            "id": 4,
+            "result": "Accepted"
+          },
+          {
+            "id": 5,
+            "result": "Accepted"
+          },
+          {
+            "id": 6,
+            "result": "Accepted"
+          },
+          {
+            "id": 7,
+            "result": "Accepted"
+          },
+          {
+            "id": 8,
+            "result": "Accepted"
+          },
+          {
+            "id": 9,
+            "result": "Accepted"
+          },
+          {
+            "id": 10,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs/1",
+      "method": "PUT",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "id": 1,
+        "submission": {
+          "source_code": "#include <stdio.h>\nint main() { printf(\"Hello World!\\n\"); return 0; }",
+          "language": "C",
+          "user_id": 0,
+          "problem_id": 0,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "score": 100.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "request": {
+      "path": "jobs/2",
+      "method": "PUT",
+      "content": {}
+    },
+    "response": {
+      "status": 404,
+      "content": {
+        "code": 3,
+        "reason": "ERR_NOT_FOUND"
+      }
+    }
+  }
+]

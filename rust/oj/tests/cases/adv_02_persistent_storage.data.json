@@ -1,0 +1,76 @@
+[
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { println!(\"Hello World!\"); }",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "submission": {
+          "source_code": "fn main() { println!(\"Hello World!\"); }",
+          "language": "Rust",
+          "user_id": 0,
+          "problem_id": 0,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "score": 100.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "restart_server": true,
+    "request": {
+      "path": "jobs",
+      "method": "GET",
+      "content": {}
+    },
+    "response": {
+      "status": 200,
+      "content": [
+        {
+          "submission": {
+            "source_code": "fn main() { println!(\"Hello World!\"); }",
+            "language": "Rust",
+            "user_id": 0,
+            "problem_id": 0,
+            "contest_id": 0
+          },
+          "state": "Finished",
+          "result": "Accepted",
+          "score": 100.0,
+          "cases": [
+            {
+              "id": 0,
+              "result": "Compilation Success"
+            },
+            {
+              "id": 1,
+              "result": "Accepted"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

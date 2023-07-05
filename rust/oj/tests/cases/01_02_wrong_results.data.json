@@ -1,0 +1,119 @@
+[
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { println!(\"Hello World.\"); }",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "submission": {
+          "source_code": "fn main() { println!(\"Hello World.\"); }",
+          "language": "Rust",
+          "user_id": 0,
+          "contest_id": 0,
+          "problem_id": 0
+        },
+        "state": "Finished",
+        "result": "Wrong Answer",
+        "score": 0.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Wrong Answer"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { panic!(\"Hello World!\"); }",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "submission": {
+          "source_code": "fn main() { panic!(\"Hello World!\"); }",
+          "language": "Rust",
+          "user_id": 0,
+          "contest_id": 0,
+          "problem_id": 0
+        },
+        "state": "Finished",
+        "result": "Runtime Error",
+        "score": 0.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Runtime Error"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { println!(\"Hello World!{}\"); }",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 0
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "submission": {
+          "source_code": "fn main() { println!(\"Hello World!{}\"); }",
+          "language": "Rust",
+          "user_id": 0,
+          "contest_id": 0,
+          "problem_id": 0
+        },
+        "state": "Finished",
+        "result": "Compilation Error",
+        "score": 0.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Error"
+          },
+          {
+            "id": 1,
+            "result": "Waiting"
+          }
+        ]
+      }
+    }
+  }
+]

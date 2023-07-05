@@ -1,0 +1,115 @@
+{
+  "server": {
+    "bind_address": "127.0.0.1",
+    "bind_port": 12345
+  },
+  "problems": [
+    {
+      "id": 0,
+      "name": "hello_world",
+      "type": "standard",
+      "misc": {},
+      "cases": [
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 100,
+          "input_file": "./tests/data/hello_world/1.in",
+          "answer_file": "./tests/data/hello_world/1.ans"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "aplusb",
+      "type": "standard",
+      "misc": {},
+      "cases": [
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 10,
+          "input_file": "./tests/data/aplusb/1.in",
+          "answer_file": "./tests/data/aplusb/1.ans"
+        },
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 10,
+          "input_file": "./tests/data/aplusb/2.in",
+          "answer_file": "./tests/data/aplusb/2.ans"
+        },
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 10,
+          "input_file": "./tests/data/aplusb/3.in",
+          "answer_file": "./tests/data/aplusb/3.ans"
+        },
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 10,
+          "input_file": "./tests/data/aplusb/4.in",
+          "answer_file": "./tests/data/aplusb/4.ans"
+        },
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 10,
+          "input_file": "./tests/data/aplusb/5.in",
+          "answer_file": "./tests/data/aplusb/5.ans"
+        },
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 10,
+          "input_file": "./tests/data/aplusb/6.in",
+          "answer_file": "./tests/data/aplusb/6.ans"
+        },
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 10,
+          "input_file": "./tests/data/aplusb/7.in",
+          "answer_file": "./tests/data/aplusb/7.ans"
+        },
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 10,
+          "input_file": "./tests/data/aplusb/8.in",
+          "answer_file": "./tests/data/aplusb/8.ans"
+        },
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 10,
+          "input_file": "./tests/data/aplusb/9.in",
+          "answer_file": "./tests/data/aplusb/9.ans"
+        },
+        {
+          "time_limit": 2000000,
+          "memory_limit": 0,
+          "score": 10,
+          "input_file": "./tests/data/aplusb/10.in",
+          "answer_file": "./tests/data/aplusb/10.ans"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "name": "Rust",
+      "file_name": "main.rs",
+      "command": [
+        "rustc",
+        "-C",
+        "opt-level=2",
+        "%INPUT%",
+        "-o",
+        "%OUTPUT%"
+      ]
+    }
+  ]
+}

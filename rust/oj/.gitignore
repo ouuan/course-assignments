@@ -1,0 +1,6 @@
+/target
+*.stdout
+*.stderr
+*.http
+tmp/
+*.db*

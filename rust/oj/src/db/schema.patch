@@ -1,0 +1,36 @@
+diff --git a/src/db/schema.rs b/src/db/schema.rs
+index 111e673..830ea7f 100644
+--- a/src/db/schema.rs
++++ b/src/db/schema.rs
+@@ -1,13 +1,13 @@
+ // @generated automatically by Diesel CLI.
+ 
+ diesel::table! {
+     case_results (job_id, id) {
+         job_id -> Integer,
+         id -> Integer,
+-        result -> Text,
++        result -> crate::db::enums::JobResultMapping,
+         time -> BigInt,
+         memory -> BigInt,
+         info -> Text,
+     }
+ }
+ 
+@@ -42,14 +42,14 @@ diesel::table! {
+         updated_time -> Timestamp,
+         source_code -> Text,
+         language -> Text,
+         user_id -> Integer,
+         contest_id -> Integer,
+         problem_id -> Integer,
+-        state -> Text,
+-        result -> Text,
++        state -> crate::db::enums::JobStateMapping,
++        result -> crate::db::enums::JobResultMapping,
+         score -> Double,
+     }
+ }
+ 
+ diesel::table! {
+     users (id) {

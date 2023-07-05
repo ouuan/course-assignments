@@ -1,0 +1,77 @@
+[
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b + 1);}",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 1
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "submission": {
+          "source_code": "fn main() {let mut line1 = String::new();std::io::stdin().read_line(&mut line1).unwrap();let a: i32 = line1.trim().parse().unwrap();let mut line2 = String::new();std::io::stdin().read_line(&mut line2).unwrap();let b: i32 = line2.trim().parse().unwrap();println!(\"{}\", a + b + 1);}",
+          "language": "Rust",
+          "user_id": 0,
+          "problem_id": 1,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Wrong Answer",
+        "score": 0.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Wrong Answer"
+          },
+          {
+            "id": 2,
+            "result": "Skipped"
+          },
+          {
+            "id": 3,
+            "result": "Skipped"
+          },
+          {
+            "id": 4,
+            "result": "Wrong Answer"
+          },
+          {
+            "id": 5,
+            "result": "Skipped"
+          },
+          {
+            "id": 6,
+            "result": "Skipped"
+          },
+          {
+            "id": 7,
+            "result": "Wrong Answer"
+          },
+          {
+            "id": 8,
+            "result": "Skipped"
+          },
+          {
+            "id": 9,
+            "result": "Skipped"
+          },
+          {
+            "id": 10,
+            "result": "Skipped"
+          }
+        ]
+      }
+    }
+  }
+]

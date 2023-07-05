@@ -1,0 +1,82 @@
+[
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { println!(\"{}\", 99.0); }",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 1
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "submission": {
+          "source_code": "fn main() { println!(\"{}\", 99.0); }",
+          "language": "Rust",
+          "user_id": 0,
+          "problem_id": 1,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Accepted",
+        "score": 100.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Accepted",
+            "info": "The error is within bounds"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "poll_for_job": true,
+    "request": {
+      "path": "jobs",
+      "method": "POST",
+      "content": {
+        "source_code": "fn main() { println!(\"{}\", 80.0); }",
+        "language": "Rust",
+        "user_id": 0,
+        "contest_id": 0,
+        "problem_id": 1
+      }
+    },
+    "response": {
+      "status": 200,
+      "content": {
+        "submission": {
+          "source_code": "fn main() { println!(\"{}\", 80.0); }",
+          "language": "Rust",
+          "user_id": 0,
+          "problem_id": 1,
+          "contest_id": 0
+        },
+        "state": "Finished",
+        "result": "Wrong Answer",
+        "score": 0.0,
+        "cases": [
+          {
+            "id": 0,
+            "result": "Compilation Success"
+          },
+          {
+            "id": 1,
+            "result": "Wrong Answer",
+            "info": "The error is beyond bounds"
+          }
+        ]
+      }
+    }
+  }
+]

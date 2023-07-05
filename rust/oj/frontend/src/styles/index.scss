@@ -1,0 +1,21 @@
+// https://github.com/lyrio-dev/ui/blob/dcff55e129fe1fca6ead5fe3a6c50399c5116beb/src/themes/themes/pure.css#L97-L115
+:root {
+  --theme-status-waiting: grey;
+  --theme-status-running: #6cf;
+  --theme-status-accepted: #25ad40;
+  --theme-status-compilation-error: #1679dc;
+  --theme-status-compilation-success: #25ad40;
+  --theme-status-wrong-answer: #ff4f4f;
+  --theme-status-runtime-error: darkorchid;
+  --theme-status-time-limit-exceeded: sandybrown;
+  --theme-status-memory-limit-exceeded: sandybrown;
+  --theme-status-system-error: grey;
+  --theme-status-spj-error: #FF5722;
+  --theme-status-skipped: #78909C;
+  --theme-status-queueing: #6cf;
+  --theme-status-canceled: #676fc1;
+}
+
+.flex > [class*="i-mdi-"] {
+  @apply shrink-0;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "digital-design-docs",
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "dev": "slidev",
+    "export": "slidev export -c"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.40.14",
+    "@slidev/theme-seriph": "^0.21.3"
+  }
+}

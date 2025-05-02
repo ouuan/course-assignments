@@ -1,0 +1,153 @@
+#!/usr/bin/env python3
+
+# Requirements:
+#   sudo apt install python3-pip
+#   sudo pip3 install scapy
+# Usage:
+#   ./gen_frame [send]
+# or
+#   python3 gen_frame [send]
+
+from scapy import *
+from scapy.utils import *
+from scapy.layers.l2 import *
+from scapy.layers.inet6 import *
+from scapy.contrib.ripng import *
+from multiprocessing import Pool
+import time
+import binascii
+import sys
+import struct
+
+SEND_FRAMES = len(sys.argv) >= 2 and sys.argv[1] == 'send'
+
+# The broadcast MAC address.
+# Also used when we do not know the router's MAC address when sending IP packets.
+MAC_BROADCAST = 'ff:ff:ff:ff:ff:ff'
+
+MAC_DUT0 = MAC_BROADCAST
+MAC_DUT1 = MAC_BROADCAST
+MAC_TESTER0 = '8c:1f:64:69:10:01'
+MAC_TESTER1 = '8c:1f:64:69:10:02'
+MAC_TESTER2 = '8c:1f:64:69:10:03'
+MAC_TESTER3 = '8c:1f:64:69:10:04'
+MAC_OTHERS = '40:41:42:43:44:45'
+IFACE_DEFAULT_ROUTE = 3
+MAC_DEFAULT_ROUTE = '8c:1f:64:69:10:04'
+
+if SEND_FRAMES:
+  MAC_DUT0 = '8c:1f:64:69:10:05'
+  MAC_DUT1 = '8c:1f:64:69:10:06'
+
+# You may need to change these IP addresses.
+# The following configuration assumes that
+#   1. The IP addresses of Interface 0 of the router are link-local and prefix:0::1/64.
+#   2. The IP addresses of Interface 1 of the router are link-local and prefix:1::1/64.
+#   3. The IP addresses of Interface 2 of the router are link-local and prefix:2::1/64.
+#   4. The IP addresses of Interface 3 of the router are link-local and prefix:3::1/64.
+#   5. There exists a 2000::/3 route (not default route), and its next hop is Interface 3, TESTER3.
+IP_PREFIX = '2a0e:aa06:497:'
+IP_TESTER0 = IP_PREFIX + '0::2'
+IP_TESTER1 = IP_PREFIX + '1::2'
+IP_DUT0 = 'fe80::8e1f:64ff:fe69:1005'  # Device under test.
+IP_DUT0_GUA = IP_PREFIX + '0::1'
+IP_DUT1 = 'fe80::8e1f:64ff:fe69:1006'
+IP_DUT3 = 'fe80::8e1f:64ff:fe69:1008'
+IP_DEFAULT_ROUTE = 'fe80::8e1f:64ff:fe69:1004'  # The IP address of the default route.
+IP_TEST_NDP = 'fe80::8888'
+IP_TEST_DST = '2402:f000::1'  # Forward destination. Route should exist.
+IP_TEST_DST_NO_MAC = IP_PREFIX + '0::100'  # Forward destination. Route should exist. MAC address should not exist.
+IP_TEST_DST_NO_ROUTE = 'fd00::1'  # Forward destination. Route should not exist.
+IP_RIP = 'ff02::9'  # RIP multicast group address.
+INTERFACES = [f'tanlabs-veth{i}' for i in range(4)]
+
+# frames.txt format:
+# <Ingress Interface ID> <Frame Length> <Frame Data...>
+
+fout = open('frames.txt', 'w')  # for simulation
+pout = RawPcapWriter('in_frames.pcap', DLT_EN10MB)  # for wireshark
+
+frames = [[] for _ in range(4)]
+
+def write_frame(iface, f):
+  if SEND_FRAMES:
+    frames[iface].append(f)
+  else:
+    print('Writing frame (interface #{}):'.format(iface))
+    f.show()
+    data = bytes(f)
+    # We use VLAN ID to indicate the interface ID in pcap files.
+    pout.write(data[:12] + struct.pack('>HH', 0x8100, 1000 + iface) + data[12:])
+    fout.write('{} {} '.format(iface, len(data)))
+    fout.write(' '.join(map(lambda x: '{:02x}'.format(x), data)))
+    fout.write('\n')
+
+
+def getll(mac):
+  data = binascii.a2b_hex(mac.replace(':', ''))
+  a = [0xfe, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, *data[:3], 0xff, 0xfe, *data[3:]]
+  a[8] ^= 0x02
+  return inet_ntop(socket.AF_INET6, a)
+
+
+def getnsma(a):
+  return inet_ntop(socket.AF_INET6, in6_getnsma(inet_pton(socket.AF_INET6, a)))
+
+ripng_responses = []
+entry_total = 0
+entry_count = 0
+
+def send_responses():
+    global ripng_responses, entry_count
+    if entry_count == 0:
+        return
+    for i in range(4):
+        write_frame(i, ripng_responses[i])
+    entry_count = 0
+
+while True:
+    try:
+        prefix, prefixlen, next_hop, iface = input().split()
+        if iface is None:
+            break
+    except EOFError:
+        break
+    if entry_count == 0:
+        ripng_responses = [
+                Ether(src=MAC_TESTER0) /
+                IPv6(src=getll(MAC_TESTER0), dst=IP_RIP, hlim=255) /
+                UDP() /
+                RIPng(cmd='resp'),
+                Ether(src=MAC_TESTER1) /
+                IPv6(src=getll(MAC_TESTER1), dst=IP_RIP, hlim=255) /
+                UDP() /
+                RIPng(cmd='resp'),
+                Ether(src=MAC_TESTER2) /
+                IPv6(src=getll(MAC_TESTER2), dst=IP_RIP, hlim=255) /
+                UDP() /
+                RIPng(cmd='resp'),
+                Ether(src=MAC_TESTER3) /
+                IPv6(src=getll(MAC_TESTER3), dst=IP_RIP, hlim=255) /
+                UDP() /
+                RIPng(cmd='resp'),
+            ]
+    entry_total += 1
+    entry_count += 1
+    for i in range(4):
+        ripng_responses[i] /= RIPngEntry(prefix_or_nh=prefix, prefixlen=int(prefixlen), metric=entry_total % 10 + 1 if i == int(iface) else 16)
+    if entry_count >= 72:
+        send_responses()
+
+send_responses()
+fout.close()
+pout.close()
+
+def send_frames(iface):
+  sendp(frames[iface], inter=0.0054, iface=INTERFACES[iface], verbose=0)
+
+if SEND_FRAMES:
+  pool = Pool(4)
+  while True:
+    start = time.time()
+    pool.map(send_frames, range(4))
+    print(time.time() - start)

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_receive_nd_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_frame_beat_width_converter_sv " />
+            <top_module name="glbl" />
+            <top_module name="tb_receive_nd" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5931360fs"></ZoomStartTime>
+      <ZoomEndTime time="6068861fs"></ZoomEndTime>
+      <Cursor1Time time="5996560fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="217"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/tb_receive_nd/interface_ip_address" type="array">
+      <obj_property name="ElementShortName">interface_ip_address[3:0][127:0]</obj_property>
+      <obj_property name="ObjectShortName">interface_ip_address[3:0][127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/interface_mac_address" type="array">
+      <obj_property name="ElementShortName">interface_mac_address[3:0][47:0]</obj_property>
+      <obj_property name="ObjectShortName">interface_mac_address[3:0][47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/clk_125M" type="logic">
+      <obj_property name="ElementShortName">clk_125M</obj_property>
+      <obj_property name="ObjectShortName">clk_125M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/in8" type="array">
+      <obj_property name="ElementShortName">in8</obj_property>
+      <obj_property name="ObjectShortName">in8</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_receive_nd/in8.data" type="array">
+         <obj_property name="ElementShortName">.data</obj_property>
+         <obj_property name="ObjectShortName">.data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in8.keep" type="array">
+         <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in8.last" type="logic">
+         <obj_property name="ElementShortName">.last</obj_property>
+         <obj_property name="ObjectShortName">.last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in8.user" type="array">
+         <obj_property name="ElementShortName">.user[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in8.valid" type="logic">
+         <obj_property name="ElementShortName">.valid</obj_property>
+         <obj_property name="ObjectShortName">.valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in8.is_first" type="logic">
+         <obj_property name="ElementShortName">.is_first</obj_property>
+         <obj_property name="ObjectShortName">.is_first</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in8.meta" type="array">
+         <obj_property name="ElementShortName">.meta</obj_property>
+         <obj_property name="ObjectShortName">.meta</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/in" type="array">
+      <obj_property name="ElementShortName">in</obj_property>
+      <obj_property name="ObjectShortName">in</obj_property>
+      <wvobject fp_name="/tb_receive_nd/in.data" type="array">
+         <obj_property name="ElementShortName">.data</obj_property>
+         <obj_property name="ObjectShortName">.data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in.keep" type="array">
+         <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in.last" type="logic">
+         <obj_property name="ElementShortName">.last</obj_property>
+         <obj_property name="ObjectShortName">.last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in.user" type="array">
+         <obj_property name="ElementShortName">.user[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in.valid" type="logic">
+         <obj_property name="ElementShortName">.valid</obj_property>
+         <obj_property name="ObjectShortName">.valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in.is_first" type="logic">
+         <obj_property name="ElementShortName">.is_first</obj_property>
+         <obj_property name="ObjectShortName">.is_first</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/in.meta" type="array">
+         <obj_property name="ElementShortName">.meta</obj_property>
+         <obj_property name="ObjectShortName">.meta</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/dut/checksum_out" type="array">
+      <obj_property name="ElementShortName">checksum_out</obj_property>
+      <obj_property name="ObjectShortName">checksum_out</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data" type="array">
+         <obj_property name="ElementShortName">.data</obj_property>
+         <obj_property name="ObjectShortName">.data</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ip6" type="array">
+            <obj_property name="ElementShortName">.ip6</obj_property>
+            <obj_property name="ObjectShortName">.ip6</obj_property>
+            <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ip6.icmp6" type="array">
+               <obj_property name="ElementShortName">.icmp6</obj_property>
+               <obj_property name="ObjectShortName">.icmp6</obj_property>
+               <obj_property name="isExpanded"></obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ip6.dst" type="array">
+               <obj_property name="ElementShortName">.dst[127:0]</obj_property>
+               <obj_property name="ObjectShortName">.dst[127:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ip6.src" type="array">
+               <obj_property name="ElementShortName">.src[127:0]</obj_property>
+               <obj_property name="ObjectShortName">.src[127:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ip6.hop_limit" type="array">
+               <obj_property name="ElementShortName">.hop_limit[7:0]</obj_property>
+               <obj_property name="ObjectShortName">.hop_limit[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ip6.next_hdr" type="array">
+               <obj_property name="ElementShortName">.next_hdr[7:0]</obj_property>
+               <obj_property name="ObjectShortName">.next_hdr[7:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ip6.payload_len" type="array">
+               <obj_property name="ElementShortName">.payload_len[15:0]</obj_property>
+               <obj_property name="ObjectShortName">.payload_len[15:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ip6.flow_lo" type="array">
+               <obj_property name="ElementShortName">.flow_lo[23:0]</obj_property>
+               <obj_property name="ObjectShortName">.flow_lo[23:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ip6.version" type="array">
+               <obj_property name="ElementShortName">.version[3:0]</obj_property>
+               <obj_property name="ObjectShortName">.version[3:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ip6.flow_hi" type="array">
+               <obj_property name="ElementShortName">.flow_hi[3:0]</obj_property>
+               <obj_property name="ObjectShortName">.flow_hi[3:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.ethertype" type="array">
+            <obj_property name="ElementShortName">.ethertype[15:0]</obj_property>
+            <obj_property name="ObjectShortName">.ethertype[15:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.src" type="array">
+            <obj_property name="ElementShortName">.src[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.src[47:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_receive_nd/dut/checksum_out.data.dst" type="array">
+            <obj_property name="ElementShortName">.dst[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.dst[47:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/dut/checksum_out.keep" type="array">
+         <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/dut/checksum_out.last" type="logic">
+         <obj_property name="ElementShortName">.last</obj_property>
+         <obj_property name="ObjectShortName">.last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/dut/checksum_out.user" type="array">
+         <obj_property name="ElementShortName">.user[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/dut/checksum_out.valid" type="logic">
+         <obj_property name="ElementShortName">.valid</obj_property>
+         <obj_property name="ObjectShortName">.valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/dut/checksum_out.is_first" type="logic">
+         <obj_property name="ElementShortName">.is_first</obj_property>
+         <obj_property name="ObjectShortName">.is_first</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/dut/checksum_out.meta" type="array">
+         <obj_property name="ElementShortName">.meta</obj_property>
+         <obj_property name="ObjectShortName">.meta</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/dut/s1" type="array">
+      <obj_property name="ElementShortName">s1</obj_property>
+      <obj_property name="ObjectShortName">s1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/out" type="array">
+      <obj_property name="ElementShortName">out</obj_property>
+      <obj_property name="ObjectShortName">out</obj_property>
+      <wvobject fp_name="/tb_receive_nd/out.data" type="array">
+         <obj_property name="ElementShortName">.data</obj_property>
+         <obj_property name="ObjectShortName">.data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/out.keep" type="array">
+         <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/out.last" type="logic">
+         <obj_property name="ElementShortName">.last</obj_property>
+         <obj_property name="ObjectShortName">.last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/out.user" type="array">
+         <obj_property name="ElementShortName">.user[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/out.valid" type="logic">
+         <obj_property name="ElementShortName">.valid</obj_property>
+         <obj_property name="ObjectShortName">.valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/out.is_first" type="logic">
+         <obj_property name="ElementShortName">.is_first</obj_property>
+         <obj_property name="ObjectShortName">.is_first</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_receive_nd/out.meta" type="array">
+         <obj_property name="ElementShortName">.meta</obj_property>
+         <obj_property name="ObjectShortName">.meta</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/in8_ready" type="logic">
+      <obj_property name="ElementShortName">in8_ready</obj_property>
+      <obj_property name="ObjectShortName">in8_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/in_ready" type="logic">
+      <obj_property name="ElementShortName">in_ready</obj_property>
+      <obj_property name="ObjectShortName">in_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/out_ready" type="logic">
+      <obj_property name="ElementShortName">out_ready</obj_property>
+      <obj_property name="ObjectShortName">out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/write_ip" type="array">
+      <obj_property name="ElementShortName">write_ip[127:0]</obj_property>
+      <obj_property name="ObjectShortName">write_ip[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/write_interface" type="array">
+      <obj_property name="ElementShortName">write_interface[2:0]</obj_property>
+      <obj_property name="ObjectShortName">write_interface[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/write_mac" type="array">
+      <obj_property name="ElementShortName">write_mac[47:0]</obj_property>
+      <obj_property name="ObjectShortName">write_mac[47:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/out_is_first" type="logic">
+      <obj_property name="ElementShortName">out_is_first</obj_property>
+      <obj_property name="ObjectShortName">out_is_first</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/dest" type="array">
+      <obj_property name="ElementShortName">dest[2:0]</obj_property>
+      <obj_property name="ObjectShortName">dest[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/drop_by_prev" type="logic">
+      <obj_property name="ElementShortName">drop_by_prev</obj_property>
+      <obj_property name="ObjectShortName">drop_by_prev</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/dest_current" type="array">
+      <obj_property name="ElementShortName">dest_current[2:0]</obj_property>
+      <obj_property name="ObjectShortName">dest_current[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/filtered" type="array">
+      <obj_property name="ElementShortName">filtered</obj_property>
+      <obj_property name="ObjectShortName">filtered</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/filtered_ready" type="logic">
+      <obj_property name="ElementShortName">filtered_ready</obj_property>
+      <obj_property name="ObjectShortName">filtered_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/out8" type="array">
+      <obj_property name="ElementShortName">out8</obj_property>
+      <obj_property name="ObjectShortName">out8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_receive_nd/out8_ready" type="logic">
+      <obj_property name="ElementShortName">out8_ready</obj_property>
+      <obj_property name="ObjectShortName">out8_ready</obj_property>
+   </wvobject>
+</wave_config>

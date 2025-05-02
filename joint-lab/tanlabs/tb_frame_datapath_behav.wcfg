@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_frame_datapath_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_forward_engine_sv " />
+            <top_module name="glbl" />
+            <top_module name="tb_frame_datapath" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="988000fs"></ZoomStartTime>
+      <ZoomEndTime time="1602501fs"></ZoomEndTime>
+      <Cursor1Time time="1300000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="267"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/tb_frame_datapath/clk_125M" type="logic">
+      <obj_property name="ElementShortName">clk_125M</obj_property>
+      <obj_property name="ObjectShortName">clk_125M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/in" type="array">
+      <obj_property name="ElementShortName">in</obj_property>
+      <obj_property name="ObjectShortName">in</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/in_ready" type="logic">
+      <obj_property name="ElementShortName">in_ready</obj_property>
+      <obj_property name="ObjectShortName">in_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out" type="array">
+      <obj_property name="ElementShortName">checksum_out</obj_property>
+      <obj_property name="ObjectShortName">checksum_out</obj_property>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.data" type="array">
+         <obj_property name="ElementShortName">.data</obj_property>
+         <obj_property name="ObjectShortName">.data</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.data.ip6" type="array">
+            <obj_property name="ElementShortName">.ip6</obj_property>
+            <obj_property name="ObjectShortName">.ip6</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.data.ethertype" type="array">
+            <obj_property name="ElementShortName">.ethertype[15:0]</obj_property>
+            <obj_property name="ObjectShortName">.ethertype[15:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.data.src" type="array">
+            <obj_property name="ElementShortName">.src[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.src[47:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.data.dst" type="array">
+            <obj_property name="ElementShortName">.dst[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.dst[47:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.keep" type="array">
+         <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.last" type="logic">
+         <obj_property name="ElementShortName">.last</obj_property>
+         <obj_property name="ObjectShortName">.last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.user" type="array">
+         <obj_property name="ElementShortName">.user[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.valid" type="logic">
+         <obj_property name="ElementShortName">.valid</obj_property>
+         <obj_property name="ObjectShortName">.valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.is_first" type="logic">
+         <obj_property name="ElementShortName">.is_first</obj_property>
+         <obj_property name="ObjectShortName">.is_first</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out.meta" type="array">
+         <obj_property name="ElementShortName">.meta</obj_property>
+         <obj_property name="ObjectShortName">.meta</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/checksum_out_ready" type="logic">
+      <obj_property name="ElementShortName">checksum_out_ready</obj_property>
+      <obj_property name="ObjectShortName">checksum_out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1" type="array">
+      <obj_property name="ElementShortName">s1</obj_property>
+      <obj_property name="ObjectShortName">s1</obj_property>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.data" type="array">
+         <obj_property name="ElementShortName">.data</obj_property>
+         <obj_property name="ObjectShortName">.data</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.data.ip6" type="array">
+            <obj_property name="ElementShortName">.ip6</obj_property>
+            <obj_property name="ObjectShortName">.ip6</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.data.ethertype" type="array">
+            <obj_property name="ElementShortName">.ethertype[15:0]</obj_property>
+            <obj_property name="ObjectShortName">.ethertype[15:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.data.src" type="array">
+            <obj_property name="ElementShortName">.src[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.src[47:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.data.dst" type="array">
+            <obj_property name="ElementShortName">.dst[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.dst[47:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.keep" type="array">
+         <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.last" type="logic">
+         <obj_property name="ElementShortName">.last</obj_property>
+         <obj_property name="ObjectShortName">.last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.user" type="array">
+         <obj_property name="ElementShortName">.user[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.valid" type="logic">
+         <obj_property name="ElementShortName">.valid</obj_property>
+         <obj_property name="ObjectShortName">.valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.is_first" type="logic">
+         <obj_property name="ElementShortName">.is_first</obj_property>
+         <obj_property name="ObjectShortName">.is_first</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1.meta" type="array">
+         <obj_property name="ElementShortName">.meta</obj_property>
+         <obj_property name="ObjectShortName">.meta</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/receive_nd_i/s1_ready" type="logic">
+      <obj_property name="ElementShortName">s1_ready</obj_property>
+      <obj_property name="ObjectShortName">s1_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in" type="array">
+      <obj_property name="ElementShortName">in</obj_property>
+      <obj_property name="ObjectShortName">in</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.data" type="array">
+         <obj_property name="ElementShortName">.data</obj_property>
+         <obj_property name="ObjectShortName">.data</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.data.ip6" type="array">
+            <obj_property name="ElementShortName">.ip6</obj_property>
+            <obj_property name="ObjectShortName">.ip6</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.data.ethertype" type="array">
+            <obj_property name="ElementShortName">.ethertype[15:0]</obj_property>
+            <obj_property name="ObjectShortName">.ethertype[15:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.data.src" type="array">
+            <obj_property name="ElementShortName">.src[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.src[47:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.data.dst" type="array">
+            <obj_property name="ElementShortName">.dst[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.dst[47:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.keep" type="array">
+         <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.last" type="logic">
+         <obj_property name="ElementShortName">.last</obj_property>
+         <obj_property name="ObjectShortName">.last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.user" type="array">
+         <obj_property name="ElementShortName">.user[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.valid" type="logic">
+         <obj_property name="ElementShortName">.valid</obj_property>
+         <obj_property name="ObjectShortName">.valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.is_first" type="logic">
+         <obj_property name="ElementShortName">.is_first</obj_property>
+         <obj_property name="ObjectShortName">.is_first</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/in.meta" type="array">
+         <obj_property name="ElementShortName">.meta</obj_property>
+         <obj_property name="ObjectShortName">.meta</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2" type="array">
+      <obj_property name="ElementShortName">s2</obj_property>
+      <obj_property name="ObjectShortName">s2</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.data" type="array">
+         <obj_property name="ElementShortName">.data</obj_property>
+         <obj_property name="ObjectShortName">.data</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.data.ip6" type="array">
+            <obj_property name="ElementShortName">.ip6</obj_property>
+            <obj_property name="ObjectShortName">.ip6</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.data.ethertype" type="array">
+            <obj_property name="ElementShortName">.ethertype[15:0]</obj_property>
+            <obj_property name="ObjectShortName">.ethertype[15:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.data.src" type="array">
+            <obj_property name="ElementShortName">.src[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.src[47:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.data.dst" type="array">
+            <obj_property name="ElementShortName">.dst[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.dst[47:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.keep" type="array">
+         <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.last" type="logic">
+         <obj_property name="ElementShortName">.last</obj_property>
+         <obj_property name="ObjectShortName">.last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.user" type="array">
+         <obj_property name="ElementShortName">.user[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.valid" type="logic">
+         <obj_property name="ElementShortName">.valid</obj_property>
+         <obj_property name="ObjectShortName">.valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.is_first" type="logic">
+         <obj_property name="ElementShortName">.is_first</obj_property>
+         <obj_property name="ObjectShortName">.is_first</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s2.meta" type="array">
+         <obj_property name="ElementShortName">.meta</obj_property>
+         <obj_property name="ObjectShortName">.meta</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3" type="array">
+      <obj_property name="ElementShortName">s3</obj_property>
+      <obj_property name="ObjectShortName">s3</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.data" type="array">
+         <obj_property name="ElementShortName">.data</obj_property>
+         <obj_property name="ObjectShortName">.data</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.data.ip6" type="array">
+            <obj_property name="ElementShortName">.ip6</obj_property>
+            <obj_property name="ObjectShortName">.ip6</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.data.ethertype" type="array">
+            <obj_property name="ElementShortName">.ethertype[15:0]</obj_property>
+            <obj_property name="ObjectShortName">.ethertype[15:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.data.src" type="array">
+            <obj_property name="ElementShortName">.src[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.src[47:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.data.dst" type="array">
+            <obj_property name="ElementShortName">.dst[47:0]</obj_property>
+            <obj_property name="ObjectShortName">.dst[47:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.keep" type="array">
+         <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.last" type="logic">
+         <obj_property name="ElementShortName">.last</obj_property>
+         <obj_property name="ObjectShortName">.last</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.user" type="array">
+         <obj_property name="ElementShortName">.user[87:0]</obj_property>
+         <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.valid" type="logic">
+         <obj_property name="ElementShortName">.valid</obj_property>
+         <obj_property name="ObjectShortName">.valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.is_first" type="logic">
+         <obj_property name="ElementShortName">.is_first</obj_property>
+         <obj_property name="ObjectShortName">.is_first</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3.meta" type="array">
+         <obj_property name="ElementShortName">.meta</obj_property>
+         <obj_property name="ObjectShortName">.meta</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s3_1" type="array">
+      <obj_property name="ElementShortName">s3_1</obj_property>
+      <obj_property name="ObjectShortName">s3_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s4" type="array">
+      <obj_property name="ElementShortName">s4</obj_property>
+      <obj_property name="ObjectShortName">s4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/s5" type="array">
+      <obj_property name="ElementShortName">s5</obj_property>
+      <obj_property name="ObjectShortName">s5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/in" type="array">
+      <obj_property name="ElementShortName">in</obj_property>
+      <obj_property name="ObjectShortName">in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/in_ready" type="logic">
+      <obj_property name="ElementShortName">in_ready</obj_property>
+      <obj_property name="ObjectShortName">in_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/out" type="array">
+      <obj_property name="ElementShortName">out</obj_property>
+      <obj_property name="ObjectShortName">out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/out_ready" type="logic">
+      <obj_property name="ElementShortName">out_ready</obj_property>
+      <obj_property name="ObjectShortName">out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s" type="array">
+      <obj_property name="ElementShortName">s[6:0]</obj_property>
+      <obj_property name="ObjectShortName">s[6:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[6]" type="array">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[5]" type="array">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[5].data" type="array">
+            <obj_property name="ElementShortName">.data</obj_property>
+            <obj_property name="ObjectShortName">.data</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[5].keep" type="array">
+            <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[5].last" type="logic">
+            <obj_property name="ElementShortName">.last</obj_property>
+            <obj_property name="ObjectShortName">.last</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[5].user" type="array">
+            <obj_property name="ElementShortName">.user[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[5].valid" type="logic">
+            <obj_property name="ElementShortName">.valid</obj_property>
+            <obj_property name="ObjectShortName">.valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[5].is_first" type="logic">
+            <obj_property name="ElementShortName">.is_first</obj_property>
+            <obj_property name="ObjectShortName">.is_first</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[5].meta" type="array">
+            <obj_property name="ElementShortName">.meta</obj_property>
+            <obj_property name="ObjectShortName">.meta</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[4]" type="array">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[4].data" type="array">
+            <obj_property name="ElementShortName">.data</obj_property>
+            <obj_property name="ObjectShortName">.data</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[4].keep" type="array">
+            <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[4].last" type="logic">
+            <obj_property name="ElementShortName">.last</obj_property>
+            <obj_property name="ObjectShortName">.last</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[4].user" type="array">
+            <obj_property name="ElementShortName">.user[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[4].valid" type="logic">
+            <obj_property name="ElementShortName">.valid</obj_property>
+            <obj_property name="ObjectShortName">.valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[4].is_first" type="logic">
+            <obj_property name="ElementShortName">.is_first</obj_property>
+            <obj_property name="ObjectShortName">.is_first</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[4].meta" type="array">
+            <obj_property name="ElementShortName">.meta</obj_property>
+            <obj_property name="ObjectShortName">.meta</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[3]" type="array">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[3].data" type="array">
+            <obj_property name="ElementShortName">.data</obj_property>
+            <obj_property name="ObjectShortName">.data</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[3].keep" type="array">
+            <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[3].last" type="logic">
+            <obj_property name="ElementShortName">.last</obj_property>
+            <obj_property name="ObjectShortName">.last</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[3].user" type="array">
+            <obj_property name="ElementShortName">.user[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[3].valid" type="logic">
+            <obj_property name="ElementShortName">.valid</obj_property>
+            <obj_property name="ObjectShortName">.valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[3].is_first" type="logic">
+            <obj_property name="ElementShortName">.is_first</obj_property>
+            <obj_property name="ObjectShortName">.is_first</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[3].meta" type="array">
+            <obj_property name="ElementShortName">.meta</obj_property>
+            <obj_property name="ObjectShortName">.meta</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[2]" type="array">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[2].data" type="array">
+            <obj_property name="ElementShortName">.data</obj_property>
+            <obj_property name="ObjectShortName">.data</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[2].keep" type="array">
+            <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[2].last" type="logic">
+            <obj_property name="ElementShortName">.last</obj_property>
+            <obj_property name="ObjectShortName">.last</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[2].user" type="array">
+            <obj_property name="ElementShortName">.user[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[2].valid" type="logic">
+            <obj_property name="ElementShortName">.valid</obj_property>
+            <obj_property name="ObjectShortName">.valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[2].is_first" type="logic">
+            <obj_property name="ElementShortName">.is_first</obj_property>
+            <obj_property name="ObjectShortName">.is_first</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[2].meta" type="array">
+            <obj_property name="ElementShortName">.meta</obj_property>
+            <obj_property name="ObjectShortName">.meta</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[1]" type="array">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[1].data" type="array">
+            <obj_property name="ElementShortName">.data</obj_property>
+            <obj_property name="ObjectShortName">.data</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[1].keep" type="array">
+            <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[1].last" type="logic">
+            <obj_property name="ElementShortName">.last</obj_property>
+            <obj_property name="ObjectShortName">.last</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[1].user" type="array">
+            <obj_property name="ElementShortName">.user[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[1].valid" type="logic">
+            <obj_property name="ElementShortName">.valid</obj_property>
+            <obj_property name="ObjectShortName">.valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[1].is_first" type="logic">
+            <obj_property name="ElementShortName">.is_first</obj_property>
+            <obj_property name="ObjectShortName">.is_first</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[1].meta" type="array">
+            <obj_property name="ElementShortName">.meta</obj_property>
+            <obj_property name="ObjectShortName">.meta</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0]" type="array">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].data" type="array">
+            <obj_property name="ElementShortName">.data</obj_property>
+            <obj_property name="ObjectShortName">.data</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].data.ip6" type="array">
+               <obj_property name="ElementShortName">.ip6</obj_property>
+               <obj_property name="ObjectShortName">.ip6</obj_property>
+               <obj_property name="isExpanded"></obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].data.ethertype" type="array">
+               <obj_property name="ElementShortName">.ethertype[15:0]</obj_property>
+               <obj_property name="ObjectShortName">.ethertype[15:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].data.src" type="array">
+               <obj_property name="ElementShortName">.src[47:0]</obj_property>
+               <obj_property name="ObjectShortName">.src[47:0]</obj_property>
+            </wvobject>
+            <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].data.dst" type="array">
+               <obj_property name="ElementShortName">.dst[47:0]</obj_property>
+               <obj_property name="ObjectShortName">.dst[47:0]</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].keep" type="array">
+            <obj_property name="ElementShortName">.keep[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.keep[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].last" type="logic">
+            <obj_property name="ElementShortName">.last</obj_property>
+            <obj_property name="ObjectShortName">.last</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].user" type="array">
+            <obj_property name="ElementShortName">.user[87:0]</obj_property>
+            <obj_property name="ObjectShortName">.user[87:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].valid" type="logic">
+            <obj_property name="ElementShortName">.valid</obj_property>
+            <obj_property name="ObjectShortName">.valid</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].is_first" type="logic">
+            <obj_property name="ElementShortName">.is_first</obj_property>
+            <obj_property name="ObjectShortName">.is_first</obj_property>
+         </wvobject>
+         <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s[0].meta" type="array">
+            <obj_property name="ElementShortName">.meta</obj_property>
+            <obj_property name="ObjectShortName">.meta</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/s_ready" type="array">
+      <obj_property name="ElementShortName">s_ready[6:0]</obj_property>
+      <obj_property name="ObjectShortName">s_ready[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_frame_datapath/dut/forward_engine_i/forwarding_table_i/max_len" type="array">
+      <obj_property name="ElementShortName">max_len[6:0][6:0]</obj_property>
+      <obj_property name="ObjectShortName">max_len[6:0][6:0]</obj_property>
+   </wvobject>
+</wave_config>

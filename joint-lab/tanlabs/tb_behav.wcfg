@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_alu_sv " />
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="669750fs"></ZoomStartTime>
+      <ZoomEndTime time="1066050fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="272"></NameColumnWidth>
+      <ValueColumnWidth column_width="149"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wvobject type="logic" fp_name="/tb/clk_125M">
+      <obj_property name="ElementShortName">clk_125M</obj_property>
+      <obj_property name="ObjectShortName">clk_125M</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/dut/reset_eth_not_booted">
+      <obj_property name="ElementShortName">reset_eth_not_booted</obj_property>
+      <obj_property name="ObjectShortName">reset_eth_not_booted</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/dut/reset_eth">
+      <obj_property name="ElementShortName">reset_eth</obj_property>
+      <obj_property name="ObjectShortName">reset_eth</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/rv32i_cpu_i/inst_pc">
+      <obj_property name="ElementShortName">inst_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/rv32i_cpu_i/regfile_i/regs">
+      <obj_property name="ElementShortName">regs[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">regs[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/wbm_i">
+      <obj_property name="ElementShortName">wbm_i</obj_property>
+      <obj_property name="ObjectShortName">wbm_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/wbm_o">
+      <obj_property name="ElementShortName">wbm_o</obj_property>
+      <obj_property name="ObjectShortName">wbm_o</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uart_tx">
+      <obj_property name="ElementShortName">uart_tx</obj_property>
+      <obj_property name="ObjectShortName">uart_tx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uart_rx">
+      <obj_property name="ElementShortName">uart_rx</obj_property>
+      <obj_property name="ObjectShortName">uart_rx</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/frame_datapath_i/in">
+      <obj_property name="ElementShortName">in</obj_property>
+      <obj_property name="ObjectShortName">in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/frame_datapath_i/forward_engine_i/s5">
+      <obj_property name="ElementShortName">s5</obj_property>
+      <obj_property name="ObjectShortName">s5</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/dut/frame_datapath_i/forward_engine_i/s5_ready">
+      <obj_property name="ElementShortName">s5_ready</obj_property>
+      <obj_property name="ObjectShortName">s5_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/frame_datapath_i/forward_engine_i/s6">
+      <obj_property name="ElementShortName">s6</obj_property>
+      <obj_property name="ObjectShortName">s6</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/dut/frame_datapath_i/out_ready">
+      <obj_property name="ElementShortName">out_ready</obj_property>
+      <obj_property name="ObjectShortName">out_ready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/dut/frame_datapath_i/filtered_ready">
+      <obj_property name="ElementShortName">filtered_ready</obj_property>
+      <obj_property name="ObjectShortName">filtered_ready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/frame_datapath_i/filtered">
+      <obj_property name="ElementShortName">filtered</obj_property>
+      <obj_property name="ObjectShortName">filtered</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/frame_datapath_i/out8">
+      <obj_property name="ElementShortName">out8</obj_property>
+      <obj_property name="ObjectShortName">out8</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/dp_tx_data">
+      <obj_property name="ElementShortName">dp_tx_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">dp_tx_data[63:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/dp_tx_keep">
+      <obj_property name="ElementShortName">dp_tx_keep[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dp_tx_keep[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/dut/dp_tx_last">
+      <obj_property name="ElementShortName">dp_tx_last</obj_property>
+      <obj_property name="ObjectShortName">dp_tx_last</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/dp_tx_user">
+      <obj_property name="ElementShortName">dp_tx_user[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dp_tx_user[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/dp_tx_dest">
+      <obj_property name="ElementShortName">dp_tx_dest[2:0]</obj_property>
+      <obj_property name="ObjectShortName">dp_tx_dest[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/dut/dp_tx_valid">
+      <obj_property name="ElementShortName">dp_tx_valid</obj_property>
+      <obj_property name="ObjectShortName">dp_tx_valid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/wbam_i">
+      <obj_property name="ElementShortName">wbam_i[2:0]</obj_property>
+      <obj_property name="ObjectShortName">wbam_i[2:0]</obj_property>
+      <wvobject type="array" fp_name="/tb/dut/wbam_i[2]">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wbam_i[1]">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wbam_i[0]">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wbam_i[2]">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wbam_i[1]">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wbam_i[0]">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/wbam_o">
+      <obj_property name="ElementShortName">wbam_o[2:0]</obj_property>
+      <obj_property name="ObjectShortName">wbam_o[2:0]</obj_property>
+      <wvobject type="array" fp_name="/tb/dut/wbam_o[2]">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wbam_o[1]">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wbam_o[0]">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wbam_o[2]">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wbam_o[1]">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb/dut/wbam_o[0]">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/wbas_o">
+      <obj_property name="ElementShortName">wbas_o</obj_property>
+      <obj_property name="ObjectShortName">wbas_o</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/wbas_i">
+      <obj_property name="ElementShortName">wbas_i</obj_property>
+      <obj_property name="ObjectShortName">wbas_i</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/cpu2router_controller_i/router_raddr">
+      <obj_property name="ElementShortName">router_raddr[8:0]</obj_property>
+      <obj_property name="ObjectShortName">router_raddr[8:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/cpu2router_controller_i/router_rdata">
+      <obj_property name="ElementShortName">router_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">router_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/dut/cpu2router_controller_i/router_read_finished">
+      <obj_property name="ElementShortName">router_read_finished</obj_property>
+      <obj_property name="ObjectShortName">router_read_finished</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/cpu2router_controller_i/router_rlen">
+      <obj_property name="ElementShortName">router_rlen[10:0]</obj_property>
+      <obj_property name="ObjectShortName">router_rlen[10:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/dpy0">
+      <obj_property name="ElementShortName">dpy0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dpy0[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dut/dpy1">
+      <obj_property name="ElementShortName">dpy1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dpy1[7:0]</obj_property>
+   </wvobject>
+</wave_config>
